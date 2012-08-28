@@ -33,7 +33,8 @@
           <a href="http://twitter.com/akosednar" target="_blank">twitter</a><br/>
           <a href="http://anthonykosednar.com/resume/AnthonyKosednarResume.pdf?v=2.0" target="_blank">resume</a><br/><br />
           <a href="/atom.xml" target="_blank"><img style="display:inline;" src="/static/rss.png" /></a>
-	  <a href="#"><img style="display:inline;" src="/static/asu.png" /></a>
+	  <br /><br />
+	  <img style="display:inline;" src="/static/Asu.png" />
         </p>
         </ul>
       </nav>
