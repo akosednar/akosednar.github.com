@@ -1,67 +1,95 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Anthony Kosednar - {{ page.title }}</title>
-  <meta name="author" content="Anthony Kosednar" />
+  <meta charset="utf-8" />
 
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/skeleton.css">
-  <link rel="stylesheet" href="/css/screen.css">
-  <link rel="stylesheet" href="/css/layout.css">
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
 
+  <title>{{ page.title }} | Anthony Kosednar</title>
 
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="/css/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="/css/foundation.min.css?v=1.0">
+  <link rel="stylesheet" href="/css/app.css?v=1.0.4">
+
+  <script src="/js/modernizr.foundation.js?v=1.0"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="four columns sidebar">
-      <nav>
-        <h2><a href="/">Anthony Kosednar</a></h2>
-        <ul>
-        <p>I post projects and write stuff here.</p>
-        <p>
-          I am a student and developer.<br />
-        </p>
-        
-        <p>
-          Check out my:<br />
-          <a href="http://github.com/akosednar/" target="_blank">github</a><br />
-          <a href="http://twitter.com/akosednar" target="_blank">twitter</a><br/>
-          <a href="http://anthonykosednar.com/resume/AnthonyKosednarResume.pdf?v=2.0" target="_blank">resume</a><br/><br />
-          <a href="/atom.xml" target="_blank"><img style="display:inline;" src="/static/rss.png" /></a>
-	  <br /><br />
-	  <img style="display:inline;" src="/static/Asu.png" />
-        </p>
-        </ul>
-      </nav>
-  </div>
-
-  <div class="twelve columns content">
-    {{ content }}
   
-    <div class="footer">
-        <div class="disclaimer">
-        <p>This site's design was based off of the work of <a href="http://swanson.github.com/">Matt Swanson</a></p>
+  <!-- Header and Nav -->
+  
+  <div class="row">
+    <div class="twelve columns">
+      <div class="panel heading">
+        <h1><a href="/">Anthony Kosednar <span class="icon">&#128640;</span></a></h1>
       </div>
     </div>
   </div>
-</div>
-<script type="text/javascript">
+  
+  <!-- End Header and Nav -->
+  
+  
+<div class="row">    
+    
+    <!-- Main Feed -->
+    
+    <!-- Nav Sidebar -->
+    <!-- This is source ordered to be pulled to the left on larger screens -->
+	<div class="three columns">
+      <div class="panel description">
+      	<h5>About</h5>
+      	<p>This is my own personal site on the web.</p>
+        <h5>Social</h5>
+        <span class="social"><a href="https://github.com/akosednar/">&#62208;</a> <a href="https://twitter.com/akosednar">&#62217;</a></span><span class="sicon"> <a href="http://reimmer.se/atom.xml">&#59194;</a></span>
+      </div>
+    </div>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28077421-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
+    <div class="nine columns">
+    {{ content }}
+    </div>
+    
+  </div>
+    
+    
+    <!-- Right Sidebar -->
+    <!-- On small devices this column is hidden -->
+    <aside class="three columns hide-for-small">
+      <!-- <p><img src="http://placehold.it/300x440&text=[ad]" /></p> -->
+    </aside>
+    
+  </div>
+    
+  
+  <!-- Footer -->
+  
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright 2012 <a href="http://anthonykosednar.com/" target="_blank">Anthony Kosednar</a></p>
+        </div>
+        <div class="six columns">
+         	<p class="right">Something bottom right?</p>
+        </div>
+      </div>
+    </div> 
+  </footer>
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="/js/jquery.js?v=1.0"></script>
+  <script src="/js/foundation.min.js?v=1.0"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="/js/app.js?v=1.0"></script>
 </body>
 </html>

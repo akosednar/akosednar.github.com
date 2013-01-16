@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<h1 style="font-size:32px;">{{ page.title }}</h1>
 <p class="meta"> {{ page.date | date: "%B %d, %Y" }} </p>
 
-<div id="post">
+<div id="post" style="padding-bottom:20px;">
 {{ content }}
+
 </div>
 
 <div id="related">
-  <h3>Related Posts</h3>
+  <h4 style="font-size:28px;">Related Posts</h4>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
     <li><span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
