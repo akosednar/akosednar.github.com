@@ -122,6 +122,12 @@ padding: 20px;
 .posts li span{
 	color: #aaa;
 }
+
+.posts li span a{
+	color: #aaa;
+	text-decoration: underline;
+}
+
 .spacer{
 	padding-top: 20px;
 }
