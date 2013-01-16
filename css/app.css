@@ -122,3 +122,6 @@ padding: 20px;
 .posts li span{
 	color: #aaa;
 }
+.posts .spacer{
+	padding-top: 20px;
+}
