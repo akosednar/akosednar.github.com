@@ -125,3 +125,21 @@ padding: 20px;
 .spacer{
 	padding-top: 20px;
 }
+
+/*
+ *
+ * The following icon is from Matt Swanson https://github.com/swanson/swanson.github.com
+ *
+ */
+.icon-hn {
+background-color: #0C84E8;
+font-weight: bold;
+color: white;
+font-size: 20px;
+height: 24px;
+width: 24px;
+text-align: center;
+position: relative;
+bottom: 5px;
+margin-right: 5px;
+}
