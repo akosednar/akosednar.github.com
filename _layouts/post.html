@@ -11,7 +11,7 @@ layout: default
 
 <div id="related">
   <h4 style="font-size:28px;">Related Posts</h4>
-  <ul class="posts">
+  <ul id="suggested" class="posts">
     {% for post in site.related_posts limit:3 %}
     <li><span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
